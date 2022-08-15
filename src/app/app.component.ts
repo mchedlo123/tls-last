@@ -9,9 +9,12 @@ import { TranslateService } from '@ngx-translate/core';
 export class AppComponent {
   title = 'tls';
 
-  constructor(private translate: TranslateService) { 
+  constructor(private translate: TranslateService) {
+    if (!localStorage.getItem('lang')) {
+      localStorage.setItem('lang', 'ka')
+    }
     // translate.addLangs(['ka', 'en', 'ru'])
-    translate.setDefaultLang('ru');
+    translate.setDefaultLang(localStorage.getItem('lang')!);
   }
 
   // useLanguage(language: string) {
@@ -20,13 +23,13 @@ export class AppComponent {
 
   onActivate(_event: any) {
     // window.scroll(0,0);
- 
-    window.scroll({ 
-            top: 0, 
-            left: 0, 
-            behavior: 'smooth' 
+
+    window.scroll({
+            top: 0,
+            left: 0,
+            behavior: 'smooth'
      });
- 
+
      //or document.body.scrollTop = 0;
      //or document.querySelector('body').scrollTo(0,0)
  }

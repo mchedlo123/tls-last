@@ -1,5 +1,7 @@
-<nav class="navbar navbar-expand-lg navbar-light">
-  <div class="container-fluid">
+<nav class="def navbar navbar-expand-lg navbar-light"
+     [class.added]="coordinate > 60">
+  <div class="container-fluid"
+       [class.added]="coordinate > 60">
     <div class="logo-wrap">
       <img src="assets\transportation.png" alt="">
     </div>
@@ -19,24 +21,19 @@
           {{'header.second' | translate}}
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
-           <li><a class="dropdown-item" routerLink="customs">{{'body.head-1' | translate}}</a></li> 
-           <li><a class="dropdown-item" routerLink="terrestrial">{{'body.head-2' | translate}}</a> </li> 
-           <li><a class="dropdown-item" routerLink="ship">{{'body.head-3' | translate}}</a> </li> 
-           <li><a class="dropdown-item" routerLink="train">{{ 'body.head-4' | translate}}</a> </li> 
+           <li><a class="dropdown-item" routerLink="customs">{{'body.head-1' | translate}}</a></li>
+           <li><a class="dropdown-item" routerLink="terrestrial">{{'body.head-2' | translate}}</a> </li>
+           <li><a class="dropdown-item" routerLink="ship">{{'body.head-3' | translate}}</a> </li>
+           <li><a class="dropdown-item" routerLink="train">{{ 'body.head-4' | translate}}</a> </li>
           </ul>
         </li>
         <li class="nav-item">
           <a class="nav-link" style="cursor: pointer" >{{'header.third' | translate}}</a>
         </li>
       </ul>
-      <select (change)="asd($event)">
-        <option value="Ka">Georgian</option>
-        <option value="En">English</option>
-        <option value="Ru">Russian</option>
-
-
-        
-      </select>
+        <span (click)="setLang(1)">Georgian</span>
+        <span (click)="setLang(2)">English</span>
+        <span (click)="setLang(3)">Russian</span>
     </div>
   </div>
 </nav>
