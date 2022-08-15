@@ -1,0 +1,101 @@
+{
+  "header": {
+    "first": "Home",
+    "second": "Services",
+    "third": "About"
+
+    
+  },
+  "body": {
+    "header": "Services",
+    "head-1": "Customs Formalities",
+    "head-2": "Land Freight",
+    "head-3": "Ocean Freight",
+    "head-4": "Rail Freight",
+    "about-us": "The international shipping company TLS offers services that include international cargo handling / logistics, warehousing, inventory / fulfillment and transportation."
+  },
+
+  "footer": {
+    "footer-header": "Contact",
+    "footer-address": "Tbilisi-Georgia",
+    "footer-gmail": "Email"
+  },
+
+  "customs": {
+    "custom-1": "Import;",
+    "custom-2": "Export;",
+    "custom-3": "Temporary entry (inluding ATA Carnet);",
+    "custom-4": "Transit;",
+    "custom-5": "Re-export;",
+    "custom-6": "Consulting on customs clearance issues;",
+    "custom-7": "Selection of commodity codes in accordance with UKTVED;",
+    "custom-8": "Calculation of duties and taxes;",
+    "custom-9": "Signing and submitting the declaration;",
+    "custom-10": "Arranging various certificates for the cargo;",
+    "custom-11": "Cargo sampling;",
+    "custom-12": "Obtaining conclusions on dual purpose cargoes. Our goal: to offer customized solutions for your specific needs. TLS offers services that include international cargo handling / logistics, warehousing, inventory / fulfillment and transportation. Our logistics specialists will personally assist you with import, export, transportation, storage and customs issues."
+  },
+
+  "ship": {
+    "ship-header-1": "Container loads",
+    "ship-1-1": "General, harmless cargo;",
+    "ship-1-2": "Refrigerated cargo;",
+    "ship-1-3": "Dangerous cargo;",
+    "ship-1-4": "Bulk cargo in dry containers;",
+    "ship-1-5": "Liquid bulk commodities in Flexitanks and Tank Containers;",
+
+    "ship-header-2": "Chartering",
+    "ship-desc": "RIX Shipping is involved in chartering vessels of all sizes and transporting cargoes of all kinds across the world. We offer professional services in chartering and brokerage, and offer transport for any type of cargo including tanker, dry-bulk commodities, project cargoes, odd-size and heavy lift – both for coastal and deep sea chartering, and many others.",
+    
+    "ship-header-3": "Shipping agency",
+    "ship-3-1": "Berth booking;",
+    "ship-3-2": "Arranging for pilots, tugs and linesmen;",
+    "ship-3-3": "Proceeding all formalities with all port authorities and entities;",
+    "ship-3-4": "Preparing and attending the loading or discharging operation;",
+    "ship-3-5": "Satisfaction of crew needs;",
+    "ship-3-6": "Ordinary repairs;",
+    "ship-3-7": "Emergency Repairs;",
+    "ship-3-8": "Fresh Water supply;",
+    "ship-3-9": "Arrangement of bunkers;",
+    "ship-3-10": "Ship Store Replenishment;"
+  
+  },
+
+  "terrestrial": {
+    "terrestrial-header": " Land transportation",
+    "terrestrial-head-1": "Road freight services",
+    "terrestrial-1": "Truck loads (FTL);",
+    "terrestrial-2": "Dangerous goods transport/ADR;",
+    "terrestrial-3": "Container loads;",
+    "terrestrial-4": "refrigerator;",
+
+
+    "terrestrial-head-2": "Cargo transportation and storage",
+    "terrestrial-2-1": "Storage in closed and open warehouses;",
+    "terrestrial-2-2": "Loading and unloading of goods in containers, wagons, trucks;",
+    "terrestrial-2-3": "Weighing;",
+    "terrestrial-2-4": " Palletizing, bagging;",
+    "terrestrial-2-5": "Cargo marking;",
+    "terrestrial-2-6": "Repair and manufacture of packaging;",
+    "terrestrial-2-7": "Schemes of securing cargo in a container;",
+    "terrestrial-2-8": "Organization of sampling, fumigation; ",
+    "terrestrial-2-9": "Overflow of liquid cargoes from railway tanks into flexi tanks;",
+    "terrestrial-2-10": "Export clearance."
+
+  },
+
+  "train": {
+    "train-header": "Rail transport",
+    "train-head-1": "Railway shipments of goods",
+
+    "train-1": "Delivery of import,export, transit cargo;",
+    "train-2": "Delivery in containers, covered and open wagons; tanks, refrigerator;",
+    "train-3": "Payment of railway tariff;",
+    "train-4": "Customs formalities;",
+    "train-5": "Financial guarantees for transit of excise cargo;",
+    "train-6": "Coordination of loading and uinloading of wagons;",
+    "train-7": "Lashing and stowage of cargo in wagons;",
+    "train-8": "Tracing of wagons;",
+    "train-10": "Cargo insurance;"
+  }
+}

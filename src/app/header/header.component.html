@@ -1,0 +1,42 @@
+<nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container-fluid">
+    <div class="logo-wrap">
+      <img src="assets\transportation.png" alt="">
+    </div>
+    <!-- Step 3: Toggle the value of the property when the toggler button is clicked. -->
+    <button class="navbar-toggler" type="button" (click)="isMenuCollapsed = !isMenuCollapsed">
+      &#9776;
+    </button>
+
+    <!-- Step 2: Add the ngbCollapse directive to the element below. -->
+    <div [ngbCollapse]="isMenuCollapsed" class="collapse navbar-collapse">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" routerLink=""  aria-current="page" >{{'header.first' | translate}}</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link" style="cursor: pointer" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          {{'header.second' | translate}}
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
+           <li><a class="dropdown-item" routerLink="customs">{{'body.head-1' | translate}}</a></li> 
+           <li><a class="dropdown-item" routerLink="terrestrial">{{'body.head-2' | translate}}</a> </li> 
+           <li><a class="dropdown-item" routerLink="ship">{{'body.head-3' | translate}}</a> </li> 
+           <li><a class="dropdown-item" routerLink="train">{{ 'body.head-4' | translate}}</a> </li> 
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="cursor: pointer" >{{'header.third' | translate}}</a>
+        </li>
+      </ul>
+      <select (change)="asd($event)">
+        <option value="Ka">Georgian</option>
+        <option value="En">English</option>
+        <option value="Ru">Russian</option>
+
+
+        
+      </select>
+    </div>
+  </div>
+</nav>

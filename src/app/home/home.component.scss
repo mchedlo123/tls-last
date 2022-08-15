@@ -1,0 +1,144 @@
+.wrapper {
+  .first-section img {
+    
+    width: 100%;
+    height: auto;
+  }
+  
+  .second-section {
+    background-color: #f4f6f9;
+    padding-top: 70px;
+    padding-bottom: 70px;
+
+    .container {
+
+      .header-wrapper {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 75px;
+
+        .msc-section-title::after {
+          content: "";
+          display: block;
+          width: 6.2rem;
+          height: .6rem;
+          background: #eed484;
+          border-radius: 300px;
+          margin: 1.6rem auto 0;
+        }
+      }
+      
+      .animation {
+        cursor: pointer;
+        position: relative;
+        top: 0;
+        transition: top ease 0.5s;
+      }
+  
+      .animation:hover {
+  
+        top: -15px;
+  
+      }
+
+      .logo {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 30px;
+      }
+
+      .description {
+        justify-content: center;
+        display: flex;
+        padding-bottom: 30px;
+        text-align: center;
+      }
+  
+    }
+  }
+
+.third-section {
+  background-color: #fff;
+  padding-top: 70px;
+  padding-bottom: 70px;
+
+  .container {
+
+    .header-wrapper {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 75px;
+
+      .msc-section-title::after {
+        content: "";
+        display: block;
+        width: 6.2rem;
+        height: .6rem;
+        background: #eed484;
+        border-radius: 300px;
+        margin: 1.6rem auto 0;
+      }
+    }
+
+    .logo {
+      
+      padding-bottom: 30px;
+    }
+
+    .description {
+      justify-content: center;
+      display: flex;
+      padding-bottom: 30px;
+    }
+
+    .third-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .third-container p{
+      text-align: justify;
+      font-size: 18px;
+      
+    }
+
+  }
+}
+
+
+
+}
+
+@media only screen and (max-width: 767px) {
+  .wrapper {
+    .third-container {
+      .logo {
+        text-align: center;
+      }
+      
+      .text p{
+        font-size: 14px !important;
+      }
+      
+    }
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+
+  .container {
+    .logo img{
+      width: 150px;
+      height: 150px;
+    }
+    
+    .description h4{
+      font-size: 1rem
+    }
+    
+    .description {
+      text-align: center
+    }
+  }
+
+}
