@@ -11,11 +11,16 @@ html {
 /* Importing Bootstrap SCSS file. */
 @import '~bootstrap/scss/bootstrap';
 .def {
-  background: transparent;
+  background-color: transparent !important;
   position: fixed;
   left: 0px;
   right: 0px;
   TOP: 0PX;
   PADDING: 0PX;
   z-index: 999999999999999;
+
+}
+
+.text-color {
+  color: red !important;
 }
