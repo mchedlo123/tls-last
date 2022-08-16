@@ -1,25 +1,29 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
+import { LanguageService } from './language.service';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'tls';
 
-  constructor(private translate: TranslateService) {
-    if (!localStorage.getItem('lang')) {
-      localStorage.setItem('lang', 'ka')
-    }
-    // translate.addLangs(['ka', 'en', 'ru'])
-    translate.setDefaultLang(localStorage.getItem('lang')!);
+  constructor(private translate: TranslateService, private language: LanguageService) {
+   
   }
 
   // useLanguage(language: string) {
   //   this.translate.use(language);
   // }
+
+  ngOnInit(): void {
+    this.language.langObs
+      .subscribe(lang => {
+        this.translate.use(lang);
+      })
+  }
 
   onActivate(_event: any) {
     // window.scroll(0,0);

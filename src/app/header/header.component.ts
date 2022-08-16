@@ -1,5 +1,6 @@
 import {Component, HostListener, OnInit} from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
+import { LanguageService } from '../language.service';
 
 @Component({
   selector: 'app-header',
@@ -18,27 +19,26 @@ export class HeaderComponent implements OnInit {
   public isMenuCollapsed = true;
   translate: any;
 
-  constructor(public translateService: TranslateService) { }
+  constructor(public translateService: TranslateService, private language: LanguageService) { }
 
   ngOnInit(): void {
   }
 
-  asd(e: any){
-    this.translateService.use(e.target.value)
-  }
+  
 
   scroll(el: HTMLElement) {
     el.scrollIntoView({behavior: 'smooth'});
   }
 
-  setLang(number: number) {
-    if (number === 1) {
-      localStorage.setItem('lang', 'ka')
-    } else if (number === 2) {
-      localStorage.setItem('lang', 'en')
-    } else if (number === 3) {
-      localStorage.setItem('lang', 'ru')
-    }
-    location.reload();
+  setLang(lang: string) {
+    // if (number === 1) {
+    //   localStorage.setItem('lang', 'ka')
+    // } else if (number === 2) {
+    //   localStorage.setItem('lang', 'en')
+    // } else if (number === 3) {
+    //   localStorage.setItem('lang', 'ru')
+    // }
+    // location.reload();
+    this.language.passLang(lang);
   }
 }

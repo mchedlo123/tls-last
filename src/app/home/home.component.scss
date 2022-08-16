@@ -17,6 +17,11 @@
         justify-content: center;
         margin-bottom: 75px;
 
+
+        .msc-section-title {
+          text-align: center;
+        }
+
         .msc-section-title::after {
           content: "";
           display: block;
@@ -68,6 +73,11 @@
       display: flex;
       justify-content: center;
       margin-bottom: 75px;
+
+
+      .msc-section-title {
+        text-align: center;
+      }
 
       .msc-section-title::after {
         content: "";
