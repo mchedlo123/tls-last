@@ -16,7 +16,7 @@
     }
     img {
       width: 200px;
-      height: 90px;
+      height: 50px;
     }
 
     .navbar-collapse {
@@ -25,6 +25,9 @@
         // justify-content: center;
         // text-align: center;
         // align-items: center;
+
+
+    
 
       .dropdown-menu li a {
         color: black !important;
@@ -43,7 +46,7 @@
         position: relative;
       }
 
-
+      
 
       a:after {
         background: none repeat scroll 0 0 transparent;
@@ -107,6 +110,8 @@
 
     }
   }
+
+  
 
   .search-box{
         width: fit-content;
@@ -172,7 +177,7 @@
 
 .added {
   background-color: #fff !important;
-  padding: 10px;
+  // padding: 10px;
   // margin: 0;
 }
 
